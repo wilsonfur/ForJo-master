@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FQw-7Q-qnh">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,18 +11,18 @@
             <objects>
                 <viewController id="FQw-7Q-qnh" customClass="MyViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YXA-zV-Ubg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bO5-xE-cEp" userLabel="weightRecord">
-                                <rect key="frame" x="0.0" y="156" width="375" height="462"/>
+                                <rect key="frame" x="0.0" y="89" width="600" height="462"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="qGj-YE-sl8" kind="embed" id="Aom-BN-LOq"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5V2-qs-WhL" userLabel="review">
-                                <rect key="frame" x="0.0" y="156" width="375" height="462"/>
+                                <rect key="frame" x="0.0" y="89" width="600" height="462"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="ZGL-Je-Gbt" kind="embed" id="4WB-A1-M0s"/>
@@ -101,21 +97,21 @@
             <objects>
                 <tableViewController id="qGj-YE-sl8" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6ko-9h-njs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="462"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="462"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
                             <tableViewSection id="Soc-9D-Sc3">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="816" id="c80-dA-1rz">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="816"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="816"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c80-dA-1rz" id="0gK-Kc-lN1">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="816"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="816"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="54y-fN-8l3">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="816"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="816"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                     <connections>
                                                         <segue destination="MKo-I4-poq" kind="embed" id="vs9-f9-TeG"/>
@@ -219,21 +215,21 @@
             <objects>
                 <tableViewController id="ZGL-Je-Gbt" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="V97-Mh-nDh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="462"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="462"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
                             <tableViewSection id="fo0-yM-UfK">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="980" id="25G-F1-Wm5">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="980"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="980"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="25G-F1-Wm5" id="hnb-nK-O1R">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="980"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="980"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0LN-RE-0Yz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="980"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="980"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                     <connections>
                                                         <segue destination="Hap-kW-HQx" kind="embed" id="fAQ-Cm-gJ3"/>
@@ -279,10 +275,10 @@
             </objects>
             <point key="canvasLocation" x="1135" y="1938"/>
         </scene>
-        <!--Home View Controller-->
+        <!--General View Controller-->
         <scene sceneID="GrL-Jp-Qld">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="Sen-PX-MZs" customClass="HomeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="Sen-PX-MZs" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LDn-H8-hPj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="816"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -297,7 +293,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title=" "/>
                                 <connections>
-                                    <action selector="test2:" destination="Sen-PX-MZs" eventType="touchUpInside" id="rDR-GN-3cB"/>
+                                    <action selector="closeBTN:" destination="Sen-PX-MZs" eventType="touchUpInside" id="rDR-GN-3cB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -309,10 +305,10 @@
             </objects>
             <point key="canvasLocation" x="1926" y="2873"/>
         </scene>
-        <!--Home View Controller-->
+        <!--General View Controller-->
         <scene sceneID="TyH-7C-6dq">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="MTE-E5-Wt7" customClass="HomeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="MTE-E5-Wt7" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F1h-CJ-WeF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="816"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -327,7 +323,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title=" "/>
                                 <connections>
-                                    <action selector="test2:" destination="MTE-E5-Wt7" eventType="touchUpInside" id="eiw-nk-jQn"/>
+                                    <action selector="closeBTN:" destination="MTE-E5-Wt7" eventType="touchUpInside" id="eiw-nk-jQn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -339,10 +335,10 @@
             </objects>
             <point key="canvasLocation" x="1926" y="3729"/>
         </scene>
-        <!--Home View Controller-->
+        <!--General View Controller-->
         <scene sceneID="NGm-qV-ztV">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="Ifq-r0-QQn" customClass="HomeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="Ifq-r0-QQn" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C8U-Qg-0Q5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="816"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -357,7 +353,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title=" "/>
                                 <connections>
-                                    <action selector="test2:" destination="Ifq-r0-QQn" eventType="touchUpInside" id="uzr-LU-A97"/>
+                                    <action selector="closeBTN:" destination="Ifq-r0-QQn" eventType="touchUpInside" id="uzr-LU-A97"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -369,10 +365,10 @@
             </objects>
             <point key="canvasLocation" x="3298" y="2873"/>
         </scene>
-        <!--Home View Controller-->
+        <!--General View Controller-->
         <scene sceneID="mR2-Zh-2JM">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="hM7-Xw-aR9" customClass="HomeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="hM7-Xw-aR9" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pbf-lE-ddD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="816"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -389,7 +385,7 @@
                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="test2:" destination="hM7-Xw-aR9" eventType="touchUpInside" id="x9X-Zf-RYc"/>
+                                    <action selector="closeBTN:" destination="hM7-Xw-aR9" eventType="touchUpInside" id="x9X-Zf-RYc"/>
                                 </connections>
                             </button>
                         </subviews>

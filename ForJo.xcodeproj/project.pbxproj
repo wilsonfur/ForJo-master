@@ -18,11 +18,12 @@
 		C83B230B2071CCF000B827E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83B23092071CCF000B827E6 /* LaunchScreen.storyboard */; };
 		C85ED3912072745B007BD208 /* images in Resources */ = {isa = PBXBuildFile; fileRef = C85ED3902072745B007BD208 /* images */; };
 		C85ED3932072EC86007BD208 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85ED3922072EC86007BD208 /* MyViewController.swift */; };
+		C873A07C208105EE00B1374E /* HomeFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C873A07B208105EE00B1374E /* HomeFinalViewController.swift */; };
 		C87CE369207204A3004CA0DF /* ShakeBodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87CE368207204A3004CA0DF /* ShakeBodyViewController.swift */; };
 		C8B6B029207957F10025F84C /* KnowledgeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6B028207957F10025F84C /* KnowledgeTableViewController.swift */; };
 		C8B6B02B2079584D0025F84C /* KnowledgeUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6B02A2079584D0025F84C /* KnowledgeUITableViewCell.swift */; };
 		C8B6B02D207959510025F84C /* KnowledgeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6B02C207959510025F84C /* KnowledgeUIView.swift */; };
-		C8D23C5B2073266B00988DF0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D23C5A2073266B00988DF0 /* HomeViewController.swift */; };
+		C8D23C5B2073266B00988DF0 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D23C5A2073266B00988DF0 /* GeneralViewController.swift */; };
 		C8D23C6120732DFA00988DF0 /* TrainingUIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D23C6020732DFA00988DF0 /* TrainingUIBarButtonItem.swift */; };
 		C8D23C6320732E4300988DF0 /* TrainingUINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D23C6220732E4300988DF0 /* TrainingUINavigationItem.swift */; };
 		C8D23C67207337AB00988DF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8D23C66207337AB00988DF0 /* Assets.xcassets */; };
@@ -47,11 +48,12 @@
 		C83B230C2071CCF000B827E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C85ED3902072745B007BD208 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		C85ED3922072EC86007BD208 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		C873A07B208105EE00B1374E /* HomeFinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFinalViewController.swift; sourceTree = "<group>"; };
 		C87CE368207204A3004CA0DF /* ShakeBodyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeBodyViewController.swift; sourceTree = "<group>"; };
 		C8B6B028207957F10025F84C /* KnowledgeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeTableViewController.swift; sourceTree = "<group>"; };
 		C8B6B02A2079584D0025F84C /* KnowledgeUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeUITableViewCell.swift; sourceTree = "<group>"; };
 		C8B6B02C207959510025F84C /* KnowledgeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeUIView.swift; sourceTree = "<group>"; };
-		C8D23C5A2073266B00988DF0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C8D23C5A2073266B00988DF0 /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
 		C8D23C6020732DFA00988DF0 /* TrainingUIBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingUIBarButtonItem.swift; sourceTree = "<group>"; };
 		C8D23C6220732E4300988DF0 /* TrainingUINavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingUINavigationItem.swift; sourceTree = "<group>"; };
 		C8D23C66207337AB00988DF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,7 +125,8 @@
 		C8D23C642073362300988DF0 /* home */ = {
 			isa = PBXGroup;
 			children = (
-				C8D23C5A2073266B00988DF0 /* HomeViewController.swift */,
+				C8D23C5A2073266B00988DF0 /* GeneralViewController.swift */,
+				C873A07B208105EE00B1374E /* HomeFinalViewController.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -249,9 +252,10 @@
 				C8303FB62079464700BB798A /* KnowledgeViewController.swift in Sources */,
 				C8D23C6120732DFA00988DF0 /* TrainingUIBarButtonItem.swift in Sources */,
 				C8E41E4C207F6D9C004C2586 /* TrainingViewController.swift in Sources */,
-				C8D23C5B2073266B00988DF0 /* HomeViewController.swift in Sources */,
+				C8D23C5B2073266B00988DF0 /* GeneralViewController.swift in Sources */,
 				C8D23C6320732E4300988DF0 /* TrainingUINavigationItem.swift in Sources */,
 				C82037A12074B3A500E8133D /* StyleUIButton.swift in Sources */,
+				C873A07C208105EE00B1374E /* HomeFinalViewController.swift in Sources */,
 				C8B6B029207957F10025F84C /* KnowledgeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

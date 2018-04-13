@@ -170,7 +170,7 @@
         <!--首頁-->
         <scene sceneID="CTz-M5-j3C">
             <objects>
-                <viewController id="v00-L7-dMI" customClass="HomeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="v00-L7-dMI" customClass="HomeViewFinalController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yAT-Eh-qRq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,7 +184,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title=" "/>
                                 <connections>
-                                    <action selector="test2:" destination="N0w-0R-XTe" eventType="touchUpInside" id="YuM-Xu-ZAT"/>
+                                    <action selector="closeBTN:" destination="N0w-0R-XTe" eventType="touchUpInside" id="YuM-Xu-ZAT"/>
                                     <segue destination="3mt-7H-L7D" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="270-eB-XnA"/>
                                 </connections>
                             </button>
@@ -230,6 +230,10 @@
                                     <segue destination="wAH-1T-4kq" kind="embed" id="e4Z-Zn-B3C"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0gA-oK-VMK">
+                                <rect key="frame" x="109" y="416" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sHD-0V-meR"/>
@@ -239,6 +243,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="circleView" destination="0gA-oK-VMK" id="T74-QJ-Rke"/>
                         <outlet property="homeState" destination="MFK-BN-seE" id="x2F-i9-0lh"/>
                         <outlet property="suggestA" destination="gcD-0Y-7Be" id="lkU-tf-H8j"/>
                         <outlet property="suggestB" destination="HbC-Al-DOt" id="L9D-MK-97g"/>
@@ -338,10 +343,10 @@
             </objects>
             <point key="canvasLocation" x="-1090" y="402"/>
         </scene>
-        <!--Home View Controller-->
+        <!--General View Controller-->
         <scene sceneID="wfz-EM-jUM">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="N0w-0R-XTe" customClass="HomeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="N0w-0R-XTe" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wAv-SP-YMy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -356,7 +361,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title=" "/>
                                 <connections>
-                                    <action selector="test2:" destination="N0w-0R-XTe" eventType="touchUpInside" id="IoG-dd-KAm"/>
+                                    <action selector="closeBTN:" destination="N0w-0R-XTe" eventType="touchUpInside" id="IoG-dd-KAm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3D-3t-3Sn" customClass="StyleUIButton" customModule="ForJo" customModuleProvider="target">
@@ -641,7 +646,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="e01" translatesAutoresizingMaskIntoConstraints="NO" id="hfF-SD-BlS">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="166"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="166" id="ar1-OZ-jsV"/>
                                                     </constraints>
@@ -696,10 +701,10 @@
             </objects>
             <point key="canvasLocation" x="3646" y="-170"/>
         </scene>
-        <!--Home View Controller-->
+        <!--General View Controller-->
         <scene sceneID="bkC-4Z-nhk">
             <objects>
-                <viewController id="WLg-rg-YTu" customClass="HomeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WLg-rg-YTu" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vzF-dc-cBE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -720,7 +725,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="test2:" destination="WLg-rg-YTu" eventType="touchUpInside" id="wsL-Lb-roz"/>
+                                            <action selector="closeBTN:" destination="WLg-rg-YTu" eventType="touchUpInside" id="wsL-Lb-roz"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -735,7 +740,7 @@
                                     <color key="titleColor" red="0.99607843139999996" green="0.98039215690000003" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="test2:" destination="3mt-7H-L7D" eventType="touchUpInside" id="t8d-v1-OqF"/>
+                                    <action selector="closeBTN:" destination="3mt-7H-L7D" eventType="touchUpInside" id="t8d-v1-OqF"/>
                                     <segue destination="duc-jp-8DX" kind="presentation" modalTransitionStyle="flipHorizontal" id="7wC-Pr-5X1"/>
                                 </connections>
                             </button>
@@ -796,10 +801,10 @@
             </objects>
             <point key="canvasLocation" x="5174" y="-168"/>
         </scene>
-        <!--Home View Controller-->
+        <!--General View Controller-->
         <scene sceneID="ILH-9Q-ba7">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="Rfc-HE-83t" customClass="HomeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="Rfc-HE-83t" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nTa-sz-Rsc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -814,7 +819,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title=" "/>
                                 <connections>
-                                    <action selector="test2:" destination="Rfc-HE-83t" eventType="touchUpInside" id="r91-PG-eYu"/>
+                                    <action selector="closeBTN:" destination="Rfc-HE-83t" eventType="touchUpInside" id="r91-PG-eYu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -826,10 +831,10 @@
             </objects>
             <point key="canvasLocation" x="2521" y="796"/>
         </scene>
-        <!--Home View Controller-->
+        <!--General View Controller-->
         <scene sceneID="H54-ke-Au4">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="Fre-et-84f" customClass="HomeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="Fre-et-84f" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7e4-2R-Dob">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -844,7 +849,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title=" "/>
                                 <connections>
-                                    <action selector="test2:" destination="Fre-et-84f" eventType="touchUpInside" id="7eo-Ut-ZJi"/>
+                                    <action selector="closeBTN:" destination="Fre-et-84f" eventType="touchUpInside" id="7eo-Ut-ZJi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -877,10 +882,10 @@
             </objects>
             <point key="canvasLocation" x="876" y="-349"/>
         </scene>
-        <!--Home View Controller-->
+        <!--General View Controller-->
         <scene sceneID="Zbf-G9-NtL">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="lUw-qJ-900" customClass="HomeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="lUw-qJ-900" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NJJ-rR-GVb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -937,10 +942,10 @@
             </objects>
             <point key="canvasLocation" x="640.79999999999995" y="-1169.865067466267"/>
         </scene>
-        <!--Home View Controller-->
+        <!--General View Controller-->
         <scene sceneID="2Ap-Lj-gcw">
             <objects>
-                <viewController id="3mt-7H-L7D" customClass="HomeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3mt-7H-L7D" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tvw-Bb-kxl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -961,7 +966,7 @@
                                     <color key="titleColor" red="0.99607843139999996" green="0.98039215690000003" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="test2:" destination="3mt-7H-L7D" eventType="touchUpInside" id="cUw-oS-JPo"/>
+                                    <action selector="closeBTN:" destination="3mt-7H-L7D" eventType="touchUpInside" id="cUw-oS-JPo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1294,7 +1299,7 @@
                                     <color key="titleColor" red="0.99607843139999996" green="0.98039215690000003" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="test2:" destination="3mt-7H-L7D" eventType="touchUpInside" id="ILL-dI-BgA"/>
+                                    <action selector="closeBTN:" destination="3mt-7H-L7D" eventType="touchUpInside" id="ILL-dI-BgA"/>
                                     <segue destination="acE-bW-8CZ" kind="presentation" modalTransitionStyle="flipHorizontal" id="Ryn-IA-NdK"/>
                                 </connections>
                             </button>
