@@ -42,7 +42,7 @@ class TrainingViewController: UIViewController {
 
 
 
-    @IBAction func test2(_ sender: UIButton) {
+    @IBAction func exitBTN(_ sender: UIButton) {
         dismiss(animated: true)
     }
     

@@ -8,29 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController, SwiftySwitchDelegate {
+class ViewController: UIViewController {
    
     
-    func valueChanged(sender: SwiftySwitch) {
-        if switch1.isOn{
-            self.view.backgroundColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
-        }else{
-            self.view.backgroundColor = #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)
-        }
-    }
-    
-
-    @IBOutlet var switch1: SwiftySwitch!
-   
     override func viewDidLoad() {
         super.viewDidLoad()
-       switch1.delegate = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 
 }

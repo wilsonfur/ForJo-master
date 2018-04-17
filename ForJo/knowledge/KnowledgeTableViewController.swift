@@ -10,26 +10,11 @@ import UIKit
 
 class KnowledgeTableViewController: UITableViewController {
 
-    @IBOutlet var tableViewContentCell: UITableViewCell!
-    @IBOutlet var kViewA: UIView!
-    @IBOutlet var kViewB: UIView!
-    
-    @IBOutlet var test: UITableViewCell!
-    
-    @IBAction func kButtonA(_ sender: UIButton) {
-      
-    }
-    
-    @IBAction func kButtonB(_ sender: UIButton) {
 
-    }
-    
-    @IBAction func kButtonC(_ sender: UIButton) {
-        print("C")
-    }
     
     
     override func viewDidLoad() {
+        self.tableView.rowHeight = 132.0
         super.viewDidLoad()
     }
 

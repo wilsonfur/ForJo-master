@@ -9,12 +9,14 @@
 import UIKit
 var HomeStateCount = 1
 var setCount = 1
-
+public var timerB:Timer!
+public var count = 13
 class HomeViewFinalController: UIViewController{
+    var countExercise = 0
     let shapelayer = CAShapeLayer()
     let sportslayer = CAShapeLayer()
-    
-    
+ 
+    @IBOutlet weak var exerciseNumber: UILabel!
     @IBOutlet weak var suggestA: UIView!
     @IBOutlet weak var suggestB: UIView!
     @IBOutlet weak var suggestC: UIView!
@@ -23,8 +25,12 @@ class HomeViewFinalController: UIViewController{
     @IBOutlet weak var circleView: UIView!
 
     @IBAction func switchHomeState(_ sender: UIButton) {
+        gg()
+        countExercise = 0
+        exerciseNumber.text = "0"
         HomeStateCount += 1
         if HomeStateCount%3 == 2 {
+            count = 15
             homeState.image = UIImage(named:"h02")
             suggestA.isHidden = true
             suggestB.isHidden = false
@@ -34,21 +40,25 @@ class HomeViewFinalController: UIViewController{
             
             
         }else if HomeStateCount%3 == 0{
+            count = 5
             homeState.image = UIImage(named:"h03")
             suggestA.isHidden = true
             suggestB.isHidden = true
             suggestC.isHidden = false
             handleTapD()
             handleTapB()
+
             
             
         }else if HomeStateCount%3 == 1 {
+            count = 13
             homeState.image = UIImage(named:"h01")
             suggestA.isHidden = false
             suggestB.isHidden = true
             suggestC.isHidden = true
             handleTap()
             handleTapB()
+
             
         }
         
@@ -64,6 +74,7 @@ class HomeViewFinalController: UIViewController{
     
     
     @objc private func handleTap(){
+
         let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
         
         basicAnimation.toValue = 0.68
@@ -103,15 +114,19 @@ class HomeViewFinalController: UIViewController{
         
         shapelayer.add(basicAnimation, forKey: "urSoBasic")
     }
+   
+
     
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-        handleTap()
-        handleTapB()
-        suggestB?.isHidden = true
-        suggestC?.isHidden = true
-        
+    @objc private func writeNumber(){
+        countExercise += 1
+        if exerciseNumber.text == "\(count)" {
+            timerB.invalidate()
+        } else {
+            exerciseNumber.text = "\(countExercise)"
+        }
+    }
+    
+    func creativeShape(){
         let center = circleView.center
         //create my track layer
         let trackLayer = CAShapeLayer()
@@ -154,7 +169,34 @@ class HomeViewFinalController: UIViewController{
         
         view.layer.addSublayer(sportslayer)
         
+    }
+    
+    
+    func gg() {
+        timerB = Timer.scheduledTimer(timeInterval: 0.03, target: self, selector: #selector(writeNumber), userInfo: nil, repeats: true)
+    }
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
+        let when = DispatchTime.now() + 0.65 // change 2 to desired number of seconds
+        
+        DispatchQueue.main.asyncAfter(deadline: when) {
+            self.writeNumber()
+            self.gg()
+            self.creativeShape()
+        }
+
+        
+        handleTap()
+        handleTapB()
+        suggestB?.isHidden = true
+        suggestC?.isHidden = true
+        
+        
+       
     }
     
     
