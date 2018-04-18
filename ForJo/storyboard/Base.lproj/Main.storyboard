@@ -90,7 +90,7 @@
             <objects>
                 <viewController id="v00-L7-dMI" customClass="HomeViewFinalController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yAT-Eh-qRq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="h01" translatesAutoresizingMaskIntoConstraints="NO" id="MFK-BN-seE">
@@ -276,7 +276,7 @@
             <objects>
                 <viewController modalPresentationStyle="overCurrentContext" id="N0w-0R-XTe" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wAv-SP-YMy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="p01" translatesAutoresizingMaskIntoConstraints="NO" id="nUh-Y7-pkv">
@@ -516,7 +516,7 @@
             <objects>
                 <viewController id="3mt-7H-L7D" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tvw-Bb-kxl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eaV-B7-1un">
@@ -527,7 +527,7 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDe-Jm-xPD">
-                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="504" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -1062,72 +1062,48 @@
             </objects>
             <point key="canvasLocation" x="5165.6000000000004" y="-2133.2833583208399"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="pmb-sp-qTN">
             <objects>
-                <viewController id="YXU-KF-S7k" sceneMemberID="viewController">
+                <viewController id="YXU-KF-S7k" customClass="DetailViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nXb-Ay-Cea">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lw7-hG-q1G">
+                                <rect key="frame" x="-20" y="0.0" width="415" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Practice03" translatesAutoresizingMaskIntoConstraints="NO" id="Vjy-xV-ezJ">
+                                        <rect key="frame" x="20" y="0.0" width="375" height="935"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Practice04.png" translatesAutoresizingMaskIntoConstraints="NO" id="MqN-IS-Ck0">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="244"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Vjy-xV-ezJ" firstAttribute="top" secondItem="Lw7-hG-q1G" secondAttribute="top" id="A7d-vb-rhA"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vjy-xV-ezJ" secondAttribute="bottom" constant="40" id="egy-dy-z7o"/>
+                                    <constraint firstItem="Vjy-xV-ezJ" firstAttribute="leading" secondItem="Lw7-hG-q1G" secondAttribute="leading" constant="20" id="lrn-w8-aYX"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Lw7-hG-q1G" secondAttribute="trailing" constant="-20" id="Nna-gk-8J5"/>
+                            <constraint firstAttribute="bottom" secondItem="Lw7-hG-q1G" secondAttribute="bottom" id="aog-fQ-wdl"/>
+                            <constraint firstItem="Lw7-hG-q1G" firstAttribute="leading" secondItem="nXb-Ay-Cea" secondAttribute="leading" constant="-20" id="aqb-jw-cpy"/>
+                            <constraint firstItem="Lw7-hG-q1G" firstAttribute="top" secondItem="nXb-Ay-Cea" secondAttribute="top" id="sdV-Da-Baa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2SI-Oa-5ao"/>
                     </view>
+                    <connections>
+                        <outlet property="myGifView" destination="MqN-IS-Ck0" id="eva-jx-F72"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ypf-uL-tpX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5167" y="-2748"/>
-        </scene>
-        <!--Exercise View Controller-->
-        <scene sceneID="L31-nv-CIx">
-            <objects>
-                <viewController id="i96-hC-UNQ" customClass="ExerciseViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ebG-te-tAR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xRE-kO-1eZ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="ufv-Yw-e4x"/>
-                                </items>
-                            </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xH9-cJ-te9">
-                                <rect key="frame" x="10" y="30" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="取消">
-                                    <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="backToTrainingMenu:" destination="i96-hC-UNQ" eventType="touchUpInside" id="s4G-v9-yET"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pg7-QD-M7r">
-                                <rect key="frame" x="282" y="573" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="btnPause"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                        <real key="value" value="0.40000000000000002"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                        <size key="value" width="0.0" height="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                        <integer key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="HTn-6u-gOv"/>
-                    </view>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <size key="freeformSize" width="375" height="667"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z8w-wn-fUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6518" y="-1419"/>
+            <point key="canvasLocation" x="5166" y="-2831"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XOz-du-b2r">
@@ -1411,6 +1387,8 @@
         <image name="15min.png" width="180" height="180"/>
         <image name="5min" width="90" height="90"/>
         <image name="Practice01" width="375" height="922"/>
+        <image name="Practice03" width="375" height="935"/>
+        <image name="Practice04.png" width="750" height="488"/>
         <image name="btnBack.png" width="220" height="84"/>
         <image name="btnNext.png" width="220" height="84"/>
         <image name="btnPause" width="60" height="60"/>
