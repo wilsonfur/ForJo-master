@@ -1076,7 +1076,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Practice03" translatesAutoresizingMaskIntoConstraints="NO" id="Vjy-xV-ezJ">
                                         <rect key="frame" x="20" y="0.0" width="375" height="935"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Practice04.png" translatesAutoresizingMaskIntoConstraints="NO" id="MqN-IS-Ck0">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MqN-IS-Ck0">
                                         <rect key="frame" x="20" y="0.0" width="374" height="244"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -1388,7 +1388,6 @@
         <image name="5min" width="90" height="90"/>
         <image name="Practice01" width="375" height="922"/>
         <image name="Practice03" width="375" height="935"/>
-        <image name="Practice04.png" width="750" height="488"/>
         <image name="btnBack.png" width="220" height="84"/>
         <image name="btnNext.png" width="220" height="84"/>
         <image name="btnPause" width="60" height="60"/>
