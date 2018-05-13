@@ -106,15 +106,15 @@
                         <sections>
                             <tableViewSection id="Soc-9D-Sc3">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="816" id="c80-dA-1rz">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="816"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="1102" id="c80-dA-1rz">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1102"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c80-dA-1rz" id="0gK-Kc-lN1">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="816"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="1102"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="54y-fN-8l3">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="816"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="1102"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <segue destination="MKo-I4-poq" kind="embed" id="vs9-f9-TeG"/>
@@ -134,21 +134,21 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kax-6M-pAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="226" y="2731"/>
+            <point key="canvasLocation" x="201" y="3062"/>
         </scene>
         <!--My View Controller-->
         <scene sceneID="dsW-ew-VvM">
             <objects>
                 <viewController id="MKo-I4-poq" customClass="MyViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rdL-uJ-Khu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="816"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1102"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="s03" translatesAutoresizingMaskIntoConstraints="NO" id="H4e-Y2-nVy">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="816"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="s03-2" translatesAutoresizingMaskIntoConstraints="NO" id="H4e-Y2-nVy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygh-88-DvU" customClass="StyleUIButton" customModule="ForJo" customModuleProvider="target">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygh-88-DvU" customClass="StyleUIButton" customModule="ForJo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="90" width="375" height="168"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
@@ -164,12 +164,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Sen-PX-MZs" kind="presentation" modalTransitionStyle="crossDissolve" id="kNs-ne-Bjk"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lb6-NR-6mv" userLabel="State64B" customClass="StyleUIButton" customModule="ForJo" customModuleProvider="target">
-                                <rect key="frame" x="188" y="411" width="188" height="66"/>
+                                <rect key="frame" x="245" y="0.0" width="130" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -184,18 +181,22 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="hM7-Xw-aR9" kind="presentation" modalTransitionStyle="crossDissolve" id="Dje-XW-9Ej"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTe-jx-0Kn" userLabel="State54" customClass="StyleUIButton" customModule="ForJo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="411" width="188" height="66"/>
+                            <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTe-jx-0Kn" userLabel="State54" customClass="StyleUIButton" customModule="ForJo" customModuleProvider="target">
+                                <rect key="frame" x="35" y="745" width="305" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYb-Yg-RJx" userLabel="State64B" customClass="StyleUIButton" customModule="ForJo" customModuleProvider="target">
+                                <rect key="frame" x="35" y="395" width="305" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ifq-r0-QQn" kind="presentation" modalTransitionStyle="crossDissolve" id="fUj-oz-X7v"/>
+                                    <segue destination="Ifq-r0-QQn" kind="presentation" modalTransitionStyle="crossDissolve" id="ik9-EI-VZe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -211,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAd-tR-4Tb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1159" y="2874"/>
+            <point key="canvasLocation" x="1133.5999999999999" y="2964.9175412293857"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="bdk-vA-qfP">
@@ -283,7 +284,7 @@
             <objects>
                 <viewController modalPresentationStyle="overCurrentContext" id="Sen-PX-MZs" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LDn-H8-hPj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="816"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="p02" translatesAutoresizingMaskIntoConstraints="NO" id="cny-kl-bsK">
@@ -306,14 +307,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLf-Bc-FoT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="2873"/>
+            <point key="canvasLocation" x="1932" y="2402"/>
         </scene>
         <!--General View Controller-->
         <scene sceneID="TyH-7C-6dq">
             <objects>
                 <viewController modalPresentationStyle="overCurrentContext" id="MTE-E5-Wt7" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F1h-CJ-WeF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="816"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1102"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="p03" translatesAutoresizingMaskIntoConstraints="NO" id="PoV-ZR-sfn">
@@ -336,23 +337,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGe-Pq-b8g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="3729"/>
+            <point key="canvasLocation" x="1932" y="3857"/>
         </scene>
         <!--General View Controller-->
         <scene sceneID="NGm-qV-ztV">
             <objects>
                 <viewController modalPresentationStyle="overCurrentContext" id="Ifq-r0-QQn" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C8U-Qg-0Q5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="816"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1102"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="p04" translatesAutoresizingMaskIntoConstraints="NO" id="fzX-GV-uf9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="p03-2" translatesAutoresizingMaskIntoConstraints="NO" id="fzX-GV-uf9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nag-AS-3iP" customClass="StyleUIButton" customModule="ForJo" customModuleProvider="target">
-                                <rect key="frame" x="15" y="486" width="345" height="63"/>
+                                <rect key="frame" x="16" y="475" width="345" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title=" "/>
                                 <connections>
@@ -366,14 +367,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6S6-IW-7mo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3298" y="2873"/>
+            <point key="canvasLocation" x="2778" y="3296"/>
         </scene>
         <!--General View Controller-->
         <scene sceneID="mR2-Zh-2JM">
             <objects>
                 <viewController modalPresentationStyle="overCurrentContext" id="hM7-Xw-aR9" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pbf-lE-ddD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="816"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="p05" translatesAutoresizingMaskIntoConstraints="NO" id="EXR-HG-fop">
@@ -398,17 +399,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uWp-4b-GVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2626" y="2872"/>
+            <point key="canvasLocation" x="2598" y="2401"/>
         </scene>
     </scenes>
     <resources>
         <image name="p02" width="375" height="667"/>
         <image name="p03" width="375" height="667"/>
-        <image name="p04" width="375" height="667"/>
+        <image name="p03-2" width="375" height="667"/>
         <image name="p05" width="375" height="667"/>
         <image name="s01.png" width="750" height="272"/>
         <image name="s02" width="375" height="980"/>
-        <image name="s03" width="375" height="816"/>
+        <image name="s03-2" width="375" height="1102"/>
         <image name="tabMy" width="18" height="22"/>
     </resources>
 </document>

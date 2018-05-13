@@ -40,7 +40,7 @@ class MIN15ViewController: UIViewController {
     }
     
     @IBAction func btnPause(_ sender: UIButton) {
-        exitBTNUI.isHidden = false
+        exitBTNUI.isHidden = true
         stopTimer()
         detail.isHidden = false
         btnPauseUI.isHidden = true

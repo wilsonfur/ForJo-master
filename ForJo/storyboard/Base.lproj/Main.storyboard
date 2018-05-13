@@ -83,14 +83,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhX-D5-FRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="946" y="-349"/>
+            <point key="canvasLocation" x="1417" y="-349"/>
         </scene>
         <!--首頁-->
         <scene sceneID="CTz-M5-j3C">
             <objects>
                 <viewController id="v00-L7-dMI" customClass="HomeViewFinalController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yAT-Eh-qRq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="h01" translatesAutoresizingMaskIntoConstraints="NO" id="MFK-BN-seE">
@@ -276,7 +276,7 @@
             <objects>
                 <viewController modalPresentationStyle="overCurrentContext" id="N0w-0R-XTe" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wAv-SP-YMy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="p01" translatesAutoresizingMaskIntoConstraints="NO" id="nUh-Y7-pkv">
@@ -470,7 +470,7 @@
                                 <state key="normal" title=" "/>
                             </button>
                             <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y5D-kz-XnS" customClass="SwiftySwitch" customModule="ForJo" customModuleProvider="target">
-                                <rect key="frame" x="116" y="163" width="143" height="63"/>
+                                <rect key="frame" x="116" y="133" width="143" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
@@ -516,7 +516,7 @@
             <objects>
                 <viewController id="3mt-7H-L7D" customClass="GeneralViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tvw-Bb-kxl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eaV-B7-1un">
@@ -527,7 +527,7 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDe-Jm-xPD">
-                                <rect key="frame" x="0.0" y="504" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -812,7 +812,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDW-FD-dsq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3480.8000000000002" y="-1693.8530734632684"/>
+            <point key="canvasLocation" x="3511" y="-1692"/>
         </scene>
         <!--Pratice View Controller-->
         <scene sceneID="ZAQ-Nj-oP6">
@@ -907,7 +907,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lur-FF-PhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4329" y="-1309"/>
+            <point key="canvasLocation" x="5166" y="-1400"/>
         </scene>
         <!--準備開始-->
         <scene sceneID="1wP-UR-x2T">
@@ -996,7 +996,7 @@
                                     <action selector="btnPause:" destination="cYr-AO-s7J" eventType="touchUpInside" id="8Ko-5q-9a2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4j-YX-jL6">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4j-YX-jL6">
                                 <rect key="frame" x="15" y="31" width="21" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="closeBTN"/>
@@ -1053,6 +1053,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="progress" translatesAutoresizingMaskIntoConstraints="NO" id="1Es-qL-FmP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="f1l-Af-rub"/>
@@ -1060,7 +1064,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r1O-Hg-4Oe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5165.6000000000004" y="-2133.2833583208399"/>
+            <point key="canvasLocation" x="5166" y="-2191"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="pmb-sp-qTN">
@@ -1087,6 +1091,10 @@
                                     <constraint firstItem="Vjy-xV-ezJ" firstAttribute="leading" secondItem="Lw7-hG-q1G" secondAttribute="leading" constant="20" id="lrn-w8-aYX"/>
                                 </constraints>
                             </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="progress" translatesAutoresizingMaskIntoConstraints="NO" id="BCf-iM-VFW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1098,7 +1106,7 @@
                         <viewLayoutGuide key="safeArea" id="2SI-Oa-5ao"/>
                     </view>
                     <connections>
-                        <outlet property="myGifView" destination="MqN-IS-Ck0" id="eva-jx-F72"/>
+                        <outlet property="slideShow" destination="MqN-IS-Ck0" id="f1S-f8-xkL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ypf-uL-tpX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1205,10 +1213,10 @@
             </objects>
             <point key="canvasLocation" x="-1354" y="239"/>
         </scene>
-        <!--View Controller-->
+        <!--Long Sit View Controller-->
         <scene sceneID="EdE-Ad-lNW">
             <objects>
-                <viewController id="x0l-G0-ESC" sceneMemberID="viewController">
+                <viewController id="x0l-G0-ESC" customClass="LongSitViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="utP-Er-15B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="984"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1241,9 +1249,12 @@
                                         <state key="normal" title="取消">
                                             <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="exitButton:" destination="x0l-G0-ESC" eventType="touchUpInside" id="1R3-bK-UTG"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="看電視一邊做" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91Y-fG-obu">
-                                        <rect key="frame" x="135" y="32" width="104" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="久坐伸展" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91Y-fG-obu">
+                                        <rect key="frame" x="152" y="32" width="70" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -1286,12 +1297,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4N-b7-rD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3481" y="-492"/>
+            <point key="canvasLocation" x="3871" y="-492"/>
         </scene>
-        <!--View Controller-->
+        <!--Before Sleep View Controller-->
         <scene sceneID="wRX-cS-Kv8">
             <objects>
-                <viewController id="IcM-65-Cmv" sceneMemberID="viewController">
+                <viewController id="IcM-65-Cmv" customClass="BeforeSleepViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hOW-bf-Qjf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="984"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1324,9 +1335,12 @@
                                         <state key="normal" title="取消">
                                             <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="exitButton:" destination="IcM-65-Cmv" eventType="touchUpInside" id="sWx-ka-n90"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="看電視一邊做" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fop-ms-pwS">
-                                        <rect key="frame" x="135" y="32" width="104" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="睡前舒緩" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fop-ms-pwS">
+                                        <rect key="frame" x="152" y="32" width="70" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -1369,7 +1383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JP5-Sh-8Dm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3480.8000000000002" y="563.11844077961018"/>
+            <point key="canvasLocation" x="3870" y="791"/>
         </scene>
         <!--knowledge-->
         <scene sceneID="Gpz-jH-bY2">
@@ -1406,6 +1420,7 @@
         <image name="hs05" width="164" height="119"/>
         <image name="img01" width="263" height="168"/>
         <image name="p01" width="375" height="667"/>
+        <image name="progress" width="375" height="5"/>
         <image name="set01.png" width="750" height="1334"/>
         <image name="t01" width="375" height="720"/>
         <image name="tabHome" width="21" height="22"/>
@@ -1416,7 +1431,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="jFM-re-90v"/>
-        <segue reference="wq3-uH-Ptx"/>
+        <segue reference="hoh-p6-zMN"/>
         <segue reference="9DQ-Jw-BaM"/>
     </inferredMetricsTieBreakers>
 </document>
