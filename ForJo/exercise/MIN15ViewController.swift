@@ -78,6 +78,7 @@ class MIN15ViewController: UIViewController {
             playSound(soundName:stepArray[countStep])
         } else {
             timerB.invalidate()
+            dismiss(animated: true)
         }
     }
     @objc public func tickDown(){
@@ -96,6 +97,7 @@ class MIN15ViewController: UIViewController {
             timer.invalidate()
             startTimer()
             return()
+            
         }
 
     }
