@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C82037A12074B3A500E8133D /* StyleUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82037A02074B3A500E8133D /* StyleUIButton.swift */; };
+		C8203B1D20AB4E6500C75C5A /* LongSitPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8203B1C20AB4E6500C75C5A /* LongSitPracticeViewController.swift */; };
 		C8303F99207665B100BB798A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8303F98207665B100BB798A /* ViewController.swift */; };
 		C8303F9B207718D400BB798A /* SwiftySwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8303F9A207718D400BB798A /* SwiftySwitch.swift */; };
 		C8303F9F2077351600BB798A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8303F9E2077351600BB798A /* TableViewController.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		C82037A02074B3A500E8133D /* StyleUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleUIButton.swift; sourceTree = "<group>"; };
+		C8203B1C20AB4E6500C75C5A /* LongSitPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongSitPracticeViewController.swift; sourceTree = "<group>"; };
 		C8303F98207665B100BB798A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C8303F9A207718D400BB798A /* SwiftySwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftySwitch.swift; sourceTree = "<group>"; };
 		C8303F9E2077351600BB798A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				C8E41E4D20804B83004C2586 /* PraticeViewController.swift */,
 				C8E41E4B207F6D9C004C2586 /* TrainingViewController.swift */,
 				C874F10E20A87B5D000E93B1 /* LongSitViewController.swift */,
+				C8203B1C20AB4E6500C75C5A /* LongSitPracticeViewController.swift */,
 				C874F11020A87C04000E93B1 /* BeforeSleepViewController.swift */,
 				C8D23C6220732E4300988DF0 /* TrainingUINavigationItem.swift */,
 				C8D23C6020732DFA00988DF0 /* TrainingUIBarButtonItem.swift */,
@@ -322,6 +325,7 @@
 				C830E99D2085EA1900CA2E2B /* ExerciseViewController.swift in Sources */,
 				C83F91AB208718D700D494FB /* DetailViewController.swift in Sources */,
 				C830E99F2085EBCC00CA2E2B /* MainTabBarController.swift in Sources */,
+				C8203B1D20AB4E6500C75C5A /* LongSitPracticeViewController.swift in Sources */,
 				C8E41E4E20804B83004C2586 /* PraticeViewController.swift in Sources */,
 				C8303F9B207718D400BB798A /* SwiftySwitch.swift in Sources */,
 				C830E9A1208710FD00CA2E2B /* PlaySound.swift in Sources */,
