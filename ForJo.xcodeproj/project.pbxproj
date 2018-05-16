@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		C82037A12074B3A500E8133D /* StyleUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82037A02074B3A500E8133D /* StyleUIButton.swift */; };
 		C8203B1D20AB4E6500C75C5A /* LongSitPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8203B1C20AB4E6500C75C5A /* LongSitPracticeViewController.swift */; };
+		C8203B1F20AB5CD500C75C5A /* BeforeSleepPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8203B1E20AB5CD500C75C5A /* BeforeSleepPracticeViewController.swift */; };
+		C8203B2120AB5F8500C75C5A /* WatchTVPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8203B2020AB5F8500C75C5A /* WatchTVPracticeViewController.swift */; };
+		C825E00A20AC92EE007A6FCC /* BeforeSleepPauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C825E00920AC92EE007A6FCC /* BeforeSleepPauseViewController.swift */; };
 		C8303F99207665B100BB798A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8303F98207665B100BB798A /* ViewController.swift */; };
 		C8303F9B207718D400BB798A /* SwiftySwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8303F9A207718D400BB798A /* SwiftySwitch.swift */; };
 		C8303F9F2077351600BB798A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8303F9E2077351600BB798A /* TableViewController.swift */; };
@@ -34,6 +37,7 @@
 		C83B22FF2071CCEF00B827E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B22FE2071CCEF00B827E6 /* AppDelegate.swift */; };
 		C83B23062071CCEF00B827E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83B23042071CCEF00B827E6 /* Main.storyboard */; };
 		C83B230B2071CCF000B827E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83B23092071CCF000B827E6 /* LaunchScreen.storyboard */; };
+		C83B5EAB20ABCD5B0025E524 /* LongSitPauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B5EAA20ABCD5B0025E524 /* LongSitPauseViewController.swift */; };
 		C83F91AB208718D700D494FB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83F91AA208718D700D494FB /* DetailViewController.swift */; };
 		C85ED3932072EC86007BD208 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85ED3922072EC86007BD208 /* MyViewController.swift */; };
 		C873A07C208105EE00B1374E /* HomeFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C873A07B208105EE00B1374E /* HomeFinalViewController.swift */; };
@@ -58,6 +62,9 @@
 /* Begin PBXFileReference section */
 		C82037A02074B3A500E8133D /* StyleUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleUIButton.swift; sourceTree = "<group>"; };
 		C8203B1C20AB4E6500C75C5A /* LongSitPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongSitPracticeViewController.swift; sourceTree = "<group>"; };
+		C8203B1E20AB5CD500C75C5A /* BeforeSleepPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeSleepPracticeViewController.swift; sourceTree = "<group>"; };
+		C8203B2020AB5F8500C75C5A /* WatchTVPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTVPracticeViewController.swift; sourceTree = "<group>"; };
+		C825E00920AC92EE007A6FCC /* BeforeSleepPauseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeSleepPauseViewController.swift; sourceTree = "<group>"; };
 		C8303F98207665B100BB798A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C8303F9A207718D400BB798A /* SwiftySwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftySwitch.swift; sourceTree = "<group>"; };
 		C8303F9E2077351600BB798A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +92,7 @@
 		C83B23052071CCEF00B827E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C83B230A2071CCF000B827E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C83B230C2071CCF000B827E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C83B5EAA20ABCD5B0025E524 /* LongSitPauseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongSitPauseViewController.swift; sourceTree = "<group>"; };
 		C83F91AA208718D700D494FB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C85ED3922072EC86007BD208 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		C873A07B208105EE00B1374E /* HomeFinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFinalViewController.swift; sourceTree = "<group>"; };
@@ -178,8 +186,8 @@
 				C8E41E48207F2FF7004C2586 /* exercise */,
 				C830E9BF208712BE00CA2E2B /* sounds */,
 				C8D23C652073366200988DF0 /* my */,
-				C8A4921F20873C150061A8A4 /* images */,
 				C8D23C66207337AB00988DF0 /* Assets.xcassets */,
+				C8A4921F20873C150061A8A4 /* images */,
 				C83B23092071CCF000B827E6 /* LaunchScreen.storyboard */,
 				C83B230C2071CCF000B827E6 /* Info.plist */,
 			);
@@ -224,9 +232,13 @@
 				C8E41E4F208063B0004C2586 /* MIN15ViewController.swift */,
 				C8E41E4D20804B83004C2586 /* PraticeViewController.swift */,
 				C8E41E4B207F6D9C004C2586 /* TrainingViewController.swift */,
+				C8203B2020AB5F8500C75C5A /* WatchTVPracticeViewController.swift */,
 				C874F10E20A87B5D000E93B1 /* LongSitViewController.swift */,
+				C83B5EAA20ABCD5B0025E524 /* LongSitPauseViewController.swift */,
 				C8203B1C20AB4E6500C75C5A /* LongSitPracticeViewController.swift */,
 				C874F11020A87C04000E93B1 /* BeforeSleepViewController.swift */,
+				C825E00920AC92EE007A6FCC /* BeforeSleepPauseViewController.swift */,
+				C8203B1E20AB5CD500C75C5A /* BeforeSleepPracticeViewController.swift */,
 				C8D23C6220732E4300988DF0 /* TrainingUINavigationItem.swift */,
 				C8D23C6020732DFA00988DF0 /* TrainingUIBarButtonItem.swift */,
 				C830E9C0208716BB00CA2E2B /* UIImage+Gif.swift */,
@@ -325,8 +337,11 @@
 				C830E99D2085EA1900CA2E2B /* ExerciseViewController.swift in Sources */,
 				C83F91AB208718D700D494FB /* DetailViewController.swift in Sources */,
 				C830E99F2085EBCC00CA2E2B /* MainTabBarController.swift in Sources */,
+				C8203B1F20AB5CD500C75C5A /* BeforeSleepPracticeViewController.swift in Sources */,
 				C8203B1D20AB4E6500C75C5A /* LongSitPracticeViewController.swift in Sources */,
+				C83B5EAB20ABCD5B0025E524 /* LongSitPauseViewController.swift in Sources */,
 				C8E41E4E20804B83004C2586 /* PraticeViewController.swift in Sources */,
+				C825E00A20AC92EE007A6FCC /* BeforeSleepPauseViewController.swift in Sources */,
 				C8303F9B207718D400BB798A /* SwiftySwitch.swift in Sources */,
 				C830E9A1208710FD00CA2E2B /* PlaySound.swift in Sources */,
 				C830E9C1208716BB00CA2E2B /* UIImage+Gif.swift in Sources */,
@@ -337,6 +352,7 @@
 				C8B6B02D207959510025F84C /* KnowledgeUIView.swift in Sources */,
 				C87CE369207204A3004CA0DF /* ShakeBodyViewController.swift in Sources */,
 				C8B6B02B2079584D0025F84C /* KnowledgeUITableViewCell.swift in Sources */,
+				C8203B2120AB5F8500C75C5A /* WatchTVPracticeViewController.swift in Sources */,
 				C8E41E4A207F3FD9004C2586 /* SwiftySwitch2.swift in Sources */,
 				C8303F9F2077351600BB798A /* TableViewController.swift in Sources */,
 				C874F10F20A87B5D000E93B1 /* LongSitViewController.swift in Sources */,
