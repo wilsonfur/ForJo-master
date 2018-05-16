@@ -1,5 +1,5 @@
 //
-//  BeforeSleepPauseViewController.swift
+//  LongStandPauseViewController.swift
 //  ForJo
 //
 //  Created by wilson on 2018/5/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BeforeSleepPauseViewController: UIViewController {
+class LongStandPauseViewController: UIViewController {
     
     @IBOutlet weak var progressbar: UIView!
     @IBOutlet weak var slideShowPause: UIImageView!

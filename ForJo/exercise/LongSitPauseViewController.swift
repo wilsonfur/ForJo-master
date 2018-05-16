@@ -10,6 +10,8 @@ import UIKit
 
 class LongSitPauseViewController: UIViewController {
     
+    @IBOutlet weak var progressbar: UIView!
+    @IBOutlet weak var slideShowPause: UIImageView!
     @IBOutlet weak var countMovie: UIImageView!
     @IBOutlet weak var countLabel: UILabel!
     func playRepeatAni(Duration:Int,RepeatCount:Int){
@@ -17,6 +19,12 @@ class LongSitPauseViewController: UIViewController {
         slideShow.animationDuration = TimeInterval(Duration)
         slideShow.animationRepeatCount = RepeatCount
         slideShow.startAnimating()
+    }
+    func playRepeatAniPause(){
+        slideShowPause.animationImages = imgArrPause
+        slideShowPause.animationDuration = 2
+        slideShowPause.animationRepeatCount = 0
+        slideShowPause.startAnimating()
     }
     func startTimer(){
         timer = Timer.scheduledTimer(timeInterval: 1 ,target: self, selector: #selector(tickDown), userInfo: nil, repeats: true)
@@ -29,6 +37,8 @@ class LongSitPauseViewController: UIViewController {
     var count = 0
 
     @objc public func tickDown(){
+        progressbar.frame.size.width = CGFloat(6.1475) * CGFloat(count)
+        
         if timeCount < 10 {
              countLabel.text = "00:0" + "\(timeCount)"
         } else {
@@ -83,6 +93,7 @@ class LongSitPauseViewController: UIViewController {
     
     
     var imgArr = [UIImage(named:"久坐1-1.png")!,UIImage(named:"久坐1-2.png")!]
+    var imgArrPause = [UIImage(named:"久坐暫停1-1.png")!,UIImage(named:"久坐暫停1-2.png")!]
 
     @IBOutlet weak var slideShow: UIImageView!
     @IBOutlet weak var bottomBTNUI: UIButton!
@@ -99,19 +110,20 @@ class LongSitPauseViewController: UIViewController {
         if btnDetect == false {
             stopTimer()
             countLabel.isHidden=true
-            countMovie.isHidden=true
+      
             exitBTNUI.isHidden = false
             bottomBTNUI.setTitle("繼續運動", for: .normal)
-            playRepeatAni(Duration: 2, RepeatCount: 0)
+            playRepeatAniPause()
+            slideShowPause.isHidden = false
         } else {
             
             startTimer()
             countLabel.isHidden=false
-            countMovie.isHidden=false
+
             exitBTNUI.isHidden = true
             bottomBTNUI.setTitle("暫停運動", for: .normal)
             imgArr = [UIImage(named:"久坐暫停1-1.png")!,UIImage(named:"久坐暫停1-2.png")!]
-           
+            slideShowPause.isHidden = true
         }
        
     }
