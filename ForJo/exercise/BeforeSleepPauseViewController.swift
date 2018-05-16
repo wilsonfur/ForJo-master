@@ -98,7 +98,7 @@ class BeforeSleepPauseViewController: UIViewController {
     @IBOutlet weak var exitBTNUI: UIButton!
     
     @IBAction func exitBTN(_ sender: Any) {
-        dismiss(animated: true)
+        dismiss(animated: false)
     }
     var btnDetect = true
     
