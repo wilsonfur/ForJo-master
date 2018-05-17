@@ -38,6 +38,8 @@
 		C830E9BD208711F300CA2E2B /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C830E9B0208711F300CA2E2B /* 4.mp3 */; };
 		C830E9C1208716BB00CA2E2B /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C830E9C0208716BB00CA2E2B /* UIImage+Gif.swift */; };
 		C83B202920AD3F01003E7A0C /* WatchTVPauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B202820AD3F01003E7A0C /* WatchTVPauseViewController.swift */; };
+		C83B203120ADD63D003E7A0C /* 久站伸展.m4v in Resources */ = {isa = PBXBuildFile; fileRef = C83B202F20ADD63D003E7A0C /* 久站伸展.m4v */; };
+		C83B203220ADD63D003E7A0C /* 倒數動畫.m4v in Resources */ = {isa = PBXBuildFile; fileRef = C83B203020ADD63D003E7A0C /* 倒數動畫.m4v */; };
 		C83B22FF2071CCEF00B827E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B22FE2071CCEF00B827E6 /* AppDelegate.swift */; };
 		C83B23062071CCEF00B827E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83B23042071CCEF00B827E6 /* Main.storyboard */; };
 		C83B230B2071CCF000B827E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83B23092071CCF000B827E6 /* LaunchScreen.storyboard */; };
@@ -95,6 +97,8 @@
 		C830E9B0208711F300CA2E2B /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4.mp3; sourceTree = "<group>"; };
 		C830E9C0208716BB00CA2E2B /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		C83B202820AD3F01003E7A0C /* WatchTVPauseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTVPauseViewController.swift; sourceTree = "<group>"; };
+		C83B202F20ADD63D003E7A0C /* 久站伸展.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "久站伸展.m4v"; path = "ForJo/sound/久站伸展.m4v"; sourceTree = "<group>"; };
+		C83B203020ADD63D003E7A0C /* 倒數動畫.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "倒數動畫.m4v"; path = "ForJo/sound/倒數動畫.m4v"; sourceTree = "<group>"; };
 		C83B22FB2071CCEF00B827E6 /* ForJo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForJo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83B22FE2071CCEF00B827E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C83B23052071CCEF00B827E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 		C83B22F22071CCEE00B827E6 = {
 			isa = PBXGroup;
 			children = (
+				C83B202F20ADD63D003E7A0C /* 久站伸展.m4v */,
+				C83B203020ADD63D003E7A0C /* 倒數動畫.m4v */,
 				C83B22FD2071CCEF00B827E6 /* ForJo */,
 				C83B22FC2071CCEF00B827E6 /* Products */,
 			);
@@ -317,6 +323,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C83B203120ADD63D003E7A0C /* 久站伸展.m4v in Resources */,
+				C83B203220ADD63D003E7A0C /* 倒數動畫.m4v in Resources */,
 				C8A4922020873C150061A8A4 /* images in Resources */,
 				C830E9B5208711F300CA2E2B /* 7.mp3 in Resources */,
 				C830E9BD208711F300CA2E2B /* 4.mp3 in Resources */,

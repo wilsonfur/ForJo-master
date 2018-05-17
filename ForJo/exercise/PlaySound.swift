@@ -8,6 +8,7 @@
 
 import Foundation
 import AVFoundation
+import AVKit
 
 var soundName:String? = nil
 
@@ -25,4 +26,5 @@ func playSound(soundName:String) {
         print(error.localizedDescription)
     }
 }
+//func 播放影片
 

@@ -7,13 +7,20 @@
 //
 
 import UIKit
+import AVKit
 
 class WatchTVPauseViewController: UIViewController {
     
+    @IBOutlet weak var countLabelOrange: UILabel!
+    @IBOutlet weak var prepareLabel: UILabel!
+    @IBOutlet weak var slideShow: UIImageView!
+    @IBOutlet weak var bottomBTNUI: UIButton!
+    @IBOutlet weak var exitBTNUI: UIButton!
     @IBOutlet weak var progressbar: UIView!
     @IBOutlet weak var slideShowPause: UIImageView!
-    @IBOutlet weak var countMovie: UIImageView!
+    @IBOutlet weak var countMovie: UIView!
     @IBOutlet weak var countLabel: UILabel!
+    
     func playRepeatAni(Duration:Int,RepeatCount:Int){
         slideShow.animationImages = imgArr
         slideShow.animationDuration = TimeInterval(Duration)
@@ -33,6 +40,18 @@ class WatchTVPauseViewController: UIViewController {
     func stopTimer(){
         timer.invalidate()
     }
+    
+    var videoPlayer: AVPlayer?
+    func configurePlayer(videoName:String) {
+        let url = Bundle.main.url(forResource: videoName, withExtension: "m4v")
+        let item = AVPlayerItem(url: url!)
+        videoPlayer = AVPlayer(playerItem: item)
+        let layer = AVPlayerLayer(player: videoPlayer)
+        countMovie.layer.addSublayer(layer)
+        layer.frame = CGRect(x: 0, y: 0, width: 375, height: 540)
+        layer.videoGravity = AVLayerVideoGravity.resizeAspect;
+    }
+    
     var timeCount = 1
     var count = 0
     
@@ -44,22 +63,28 @@ class WatchTVPauseViewController: UIViewController {
         switch count {
         //倒數5秒
         case 1:
-            countMovie.isHidden=false
             timeCount = 1
             playSound(soundName:"BEE")
+            countLabelOrange.text = "4"
         case 2:
             playSound(soundName:"BEE")
+            countLabelOrange.text = "3"
         case 3:
             playSound(soundName:"BEE")
+            countLabelOrange.text = "2"
         case 4:
             playSound(soundName:"BEE")
+            countLabelOrange.text = "1"
         case 5:
-            playSound(soundName:"DOM")
+            playSound(soundName:"BEE")
+           countLabelOrange.text = "0"
         case 6:
+            countLabel.isHidden = false
+            countLabelOrange.isHidden = true
+            prepareLabel.frame = CGRect(x:127, y:415, width: 121, height: 21)
             playSound(soundName:"1")
-            countLabel.alpha = 1
             countMovie.isHidden=true
-            imgArr = [UIImage(named:"久坐1-1.png")!,UIImage(named:"久坐1-2.png")!]
+            imgArr = [UIImage(named:"exe1-1.png")!,UIImage(named:"exe1-2.png")!]
             playRepeatAni(Duration: 2, RepeatCount: 0)
         //輪播40秒
         case 6...7:
@@ -128,18 +153,19 @@ class WatchTVPauseViewController: UIViewController {
         case 42...44:
             countLabel.text = "10/10次"
         case 45:
-             playSound(soundName:"DOM")
+            playSound(soundName:"DOM")
+            configurePlayer(videoName: "倒數動畫")
+            videoPlayer?.play()
         //休息30秒
         case 46...75:
-            countLabel.alpha = 0.1
             countMovie.isHidden=false
             timeCount = 1
         case 76:
-            countLabel.alpha = 1
             countMovie.isHidden=true
-            imgArr = [UIImage(named:"久坐2-1.png")!,UIImage(named:"久坐2-2.png")!]
+            imgArr = [UIImage(named:"exe2-1.png")!,UIImage(named:"exe2-2.png")!]
             playRepeatAni(Duration: 2, RepeatCount: 0)
             playSound(soundName:"1")
+            countLabel.text = "1/10次"
         //輪播40秒
         case 76...78:
             countLabel.text = "1/10次"
@@ -204,22 +230,24 @@ class WatchTVPauseViewController: UIViewController {
         case 112:
             countLabel.text = "10/10次"
             playSound(soundName:"10")
-        case 113...115:
+        case 113...114:
             countLabel.text = "10/10次"
         case 115:
-            playSound(soundName:"BEE")
+            playSound(soundName:"DOM")
+            configurePlayer(videoName: "倒數動畫")
+            videoPlayer?.play()
          //休息30秒
         case 116...145:
-            countLabel.alpha = 0.1
             countMovie.isHidden=false
             timeCount = 1
         case 146:
-            countLabel.alpha = 1
+            playSound(soundName:"1")
+            countLabel.text = "1/10次"
             countMovie.isHidden=true
-            imgArr = [UIImage(named:"久坐3-1.png")!,UIImage(named:"久坐3-2.png")!]
+            imgArr = [UIImage(named:"exe3-1.png")!,UIImage(named:"exe3-2.png")!]
             playRepeatAni(Duration: 2, RepeatCount: 0)
         //輪播40秒
-        case 146...148:
+        case 147...148:
             countLabel.text = "1/10次"
         case 149:
             playSound(soundName:"DOM")
@@ -284,29 +312,24 @@ class WatchTVPauseViewController: UIViewController {
             countLabel.text = "10/10次"
         case 183...185:
             countLabel.text = "10/10次"
-        case 185:
-            playSound(soundName:"BEE")
-        //離開
         case 186:
+            playSound(soundName:"DOM")
+        //離開
+        case 187:
             dismiss(animated: true)
         default:
-            print("okay")
             stopTimer()
         }
-        
     }
     
     
     
     var imgArr = [UIImage(named:"久坐1-1.png")!,UIImage(named:"久坐1-2.png")!]
     var imgArrPause = [UIImage(named:"久坐暫停1-1.png")!,UIImage(named:"久坐暫停1-2.png")!]
-    
-    @IBOutlet weak var slideShow: UIImageView!
-    @IBOutlet weak var bottomBTNUI: UIButton!
-    @IBOutlet weak var exitBTNUI: UIButton!
+
     
     @IBAction func exitBTN(_ sender: Any) {
-        dismiss(animated: false)
+        dismiss(animated: true)
     }
     var btnDetect = true
     
@@ -316,16 +339,13 @@ class WatchTVPauseViewController: UIViewController {
         if btnDetect == false {
             stopTimer()
             countLabel.isHidden=true
-            
             exitBTNUI.isHidden = false
             bottomBTNUI.setTitle("繼續運動", for: .normal)
             playRepeatAniPause()
             slideShowPause.isHidden = false
         } else {
-            
             startTimer()
             countLabel.isHidden=false
-            
             exitBTNUI.isHidden = true
             bottomBTNUI.setTitle("暫停運動", for: .normal)
             imgArr = [UIImage(named:"久坐暫停1-1.png")!,UIImage(named:"久坐暫停1-2.png")!]
@@ -334,34 +354,16 @@ class WatchTVPauseViewController: UIViewController {
         
     }
     
-    
-    
-    
-    
     override func viewDidLoad() {
+        prepareLabel.frame = CGRect(x:127, y:128, width: 121, height: 21)
         exitBTNUI.isHidden = true
         super.viewDidLoad()
         startTimer()
         countLabel.text = "1/10次"
-        countLabel.alpha = 0.1
-        
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+
 }
