@@ -11,7 +11,10 @@ var HomeStateCount = 1
 var setCount = 1
 public var timerB:Timer!
 public var count = 13
+
 class HomeViewFinalController: UIViewController{
+    @IBOutlet weak var DateLabel: UILabel!
+    
     var countExercise = 0
     let shapelayer = CAShapeLayer()
     let sportslayer = CAShapeLayer()
@@ -175,12 +178,41 @@ class HomeViewFinalController: UIViewController{
     func gg() {
         timerB = Timer.scheduledTimer(timeInterval: 0.03, target: self, selector: #selector(writeNumber), userInfo: nil, repeats: true)
     }
+  
+    var weekday = "\(Calendar.current.component(.weekday, from: Date()))"
+    var weekdayCN = "五"
     
-    
+    func setUp() {
+        print(weekday)
+        switch weekday {
+      
+        case "1":
+            weekdayCN = "日"
+        case "2":
+            weekdayCN = "一"
+        case "3":
+            weekdayCN = "二"
+        case "4":
+            weekdayCN = "三"
+        case "5":
+            weekdayCN = "四"
+        case "6":
+            weekdayCN = "五"
+        case "7":
+            weekdayCN = "日"
+        default:
+            print("okay")
+        }
+        
+        DateLabel.text =
+            "\(Calendar.current.component(.month, from: Date()))" + "月" + "\(Calendar.current.component(.day, from: Date()))" + "日" + " " + "星期" + weekdayCN
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUp()
         
+       
         let when = DispatchTime.now() + 0.65 // change 2 to desired number of seconds
         
         DispatchQueue.main.asyncAfter(deadline: when) {
@@ -189,31 +221,19 @@ class HomeViewFinalController: UIViewController{
             self.creativeShape()
         }
 
-        
         handleTap()
         handleTapB()
         suggestB?.isHidden = true
         suggestC?.isHidden = true
-        
         
        
     }
     
     
     override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    /*
-     // MARK: - Navigation
      
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+        super.didReceiveMemoryWarning()
+
+    }
+
 }

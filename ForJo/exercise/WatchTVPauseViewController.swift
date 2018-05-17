@@ -338,14 +338,12 @@ class WatchTVPauseViewController: UIViewController {
         btnDetect = !btnDetect
         if btnDetect == false {
             stopTimer()
-            countLabel.isHidden=true
             exitBTNUI.isHidden = false
             bottomBTNUI.setTitle("繼續運動", for: .normal)
             playRepeatAniPause()
             slideShowPause.isHidden = false
         } else {
             startTimer()
-            countLabel.isHidden=false
             exitBTNUI.isHidden = true
             bottomBTNUI.setTitle("暫停運動", for: .normal)
             imgArr = [UIImage(named:"久坐暫停1-1.png")!,UIImage(named:"久坐暫停1-2.png")!]
@@ -360,6 +358,7 @@ class WatchTVPauseViewController: UIViewController {
         super.viewDidLoad()
         startTimer()
         countLabel.text = "1/10次"
+        countLabel.isHidden = true
     }
     
     override func didReceiveMemoryWarning() {

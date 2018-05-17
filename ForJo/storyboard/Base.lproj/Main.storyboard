@@ -161,6 +161,13 @@
                                     </label>
                                 </subviews>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZr-PZ-DVi">
+                                <rect key="frame" x="93" y="54" width="189" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sHD-0V-meR"/>
@@ -170,6 +177,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="DateLabel" destination="DZr-PZ-DVi" id="AtC-HQ-rOl"/>
                         <outlet property="circleView" destination="0gA-oK-VMK" id="T74-QJ-Rke"/>
                         <outlet property="exerciseNumber" destination="cl9-D2-qq4" id="hE0-t9-eqI"/>
                         <outlet property="homeState" destination="MFK-BN-seE" id="x2F-i9-0lh"/>
@@ -186,7 +194,7 @@
                     <viewLayoutGuide key="safeArea" id="fJG-0i-XCy"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="-1046" y="-349"/>
+            <point key="canvasLocation" x="-1047.2" y="-349.47526236881561"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XvU-E0-Iuc">
@@ -715,7 +723,7 @@
                                         <rect key="frame" x="151" y="354" width="120" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="HwJ-AW-mR8" kind="presentation" modalTransitionStyle="flipHorizontal" id="RkH-1p-NLf"/>
+                                            <segue destination="HwJ-AW-mR8" kind="presentation" modalTransitionStyle="crossDissolve" id="RkH-1p-NLf"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeF-WW-0RG">
@@ -15463,8 +15471,8 @@ AgAMPgoADD4NAAw+HwAMPiIADD4nAAAAAAAABAEAAAAAAAAAWQAAAAAAAAAAAAAAAAAMPik
         <image name="開始運動前倒數" width="375" height="530"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jFM-re-90v"/>
-        <segue reference="hoh-p6-zMN"/>
+        <segue reference="bHI-Nn-Obv"/>
+        <segue reference="wq3-uH-Ptx"/>
         <segue reference="9DQ-Jw-BaM"/>
     </inferredMetricsTieBreakers>
 </document>
