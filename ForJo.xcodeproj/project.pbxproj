@@ -37,6 +37,7 @@
 		C830E9BC208711F300CA2E2B /* DOM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C830E9AF208711F300CA2E2B /* DOM.mp3 */; };
 		C830E9BD208711F300CA2E2B /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C830E9B0208711F300CA2E2B /* 4.mp3 */; };
 		C830E9C1208716BB00CA2E2B /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C830E9C0208716BB00CA2E2B /* UIImage+Gif.swift */; };
+		C83B202920AD3F01003E7A0C /* WatchTVPauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B202820AD3F01003E7A0C /* WatchTVPauseViewController.swift */; };
 		C83B22FF2071CCEF00B827E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B22FE2071CCEF00B827E6 /* AppDelegate.swift */; };
 		C83B23062071CCEF00B827E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83B23042071CCEF00B827E6 /* Main.storyboard */; };
 		C83B230B2071CCF000B827E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83B23092071CCF000B827E6 /* LaunchScreen.storyboard */; };
@@ -93,6 +94,7 @@
 		C830E9AF208711F300CA2E2B /* DOM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DOM.mp3; sourceTree = "<group>"; };
 		C830E9B0208711F300CA2E2B /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4.mp3; sourceTree = "<group>"; };
 		C830E9C0208716BB00CA2E2B /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		C83B202820AD3F01003E7A0C /* WatchTVPauseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTVPauseViewController.swift; sourceTree = "<group>"; };
 		C83B22FB2071CCEF00B827E6 /* ForJo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForJo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83B22FE2071CCEF00B827E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C83B23052071CCEF00B827E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				C8E41E4D20804B83004C2586 /* PraticeViewController.swift */,
 				C8E41E4B207F6D9C004C2586 /* TrainingViewController.swift */,
 				C8203B2020AB5F8500C75C5A /* WatchTVPracticeViewController.swift */,
+				C83B202820AD3F01003E7A0C /* WatchTVPauseViewController.swift */,
 				C874F10E20A87B5D000E93B1 /* LongSitViewController.swift */,
 				C83B5EAA20ABCD5B0025E524 /* LongSitPauseViewController.swift */,
 				C8203B1C20AB4E6500C75C5A /* LongSitPracticeViewController.swift */,
@@ -364,6 +367,7 @@
 				C8B6B02B2079584D0025F84C /* KnowledgeUITableViewCell.swift in Sources */,
 				C8203B2120AB5F8500C75C5A /* WatchTVPracticeViewController.swift in Sources */,
 				C8E41E4A207F3FD9004C2586 /* SwiftySwitch2.swift in Sources */,
+				C83B202920AD3F01003E7A0C /* WatchTVPauseViewController.swift in Sources */,
 				C8303F9F2077351600BB798A /* TableViewController.swift in Sources */,
 				C874F10F20A87B5D000E93B1 /* LongSitViewController.swift in Sources */,
 				C8303FB62079464700BB798A /* KnowledgeViewController.swift in Sources */,
