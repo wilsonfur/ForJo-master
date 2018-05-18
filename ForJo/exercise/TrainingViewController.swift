@@ -11,6 +11,7 @@ import UIKit
 
 class TrainingViewController: UIViewController {
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var MIN5UI: UIImageView!
     @IBOutlet weak var MIN10UI: UIImageView!
     @IBOutlet weak var MIN15UI: UIImageView!

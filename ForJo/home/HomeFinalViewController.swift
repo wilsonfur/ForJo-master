@@ -199,7 +199,7 @@ class HomeViewFinalController: UIViewController{
         case "6":
             weekdayCN = "五"
         case "7":
-            weekdayCN = "日"
+            weekdayCN = "六"
         default:
             print("okay")
         }
