@@ -231,6 +231,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="164" height="119"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button" image="hs02"/>
+                                                <connections>
+                                                    <segue destination="9Hd-vh-rcb" kind="presentation" id="A1T-ac-kWU"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -611,7 +614,7 @@
             <objects>
                 <tableViewController id="Ddm-2g-raO" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="b5b-Ev-kh5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
@@ -648,6 +651,9 @@
                                                             <real key="value" value="62.5"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <segue destination="9Hd-vh-rcb" kind="presentation" id="Uc0-ZQ-xg3"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ri-8M-u4s" customClass="StyleUIButton" customModule="ForJo" customModuleProvider="target">
                                                     <rect key="frame" x="42" y="365" width="125" height="125"/>
@@ -657,6 +663,9 @@
                                                             <real key="value" value="62.5"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <segue destination="q6L-aI-BR1" kind="presentation" id="TT2-Lx-nOh"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRB-8B-XqV" customClass="StyleUIButton" customModule="ForJo" customModuleProvider="target">
                                                     <rect key="frame" x="42" y="544" width="125" height="125"/>
@@ -666,6 +675,9 @@
                                                             <real key="value" value="62.5"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <segue destination="co3-lG-X9h" kind="presentation" id="BJ8-v0-XPm"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kc-bv-aSd" customClass="StyleUIButton" customModule="ForJo" customModuleProvider="target">
                                                     <rect key="frame" x="208" y="365" width="125" height="125"/>
@@ -675,6 +687,9 @@
                                                             <real key="value" value="62.5"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <segue destination="Z4I-35-fNb" kind="presentation" id="and-3g-dae"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -688,10 +703,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Pwv-hR-f1E"/>
+                    <size key="freeformSize" width="375" height="667"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2jB-pQ-vXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2735" y="-1692"/>
+            <point key="canvasLocation" x="534" y="-3063"/>
         </scene>
         <!--Training View Controller-->
         <scene sceneID="HcO-aT-BYw">
@@ -2079,18 +2095,18 @@
             </objects>
             <point key="canvasLocation" x="4781.6000000000004" y="-2275.4122938530736"/>
         </scene>
-        <!--Training View Controller-->
+        <!--Up Body View Controller-->
         <scene sceneID="RfL-Jq-3JV">
             <objects>
-                <viewController id="Z4I-35-fNb" customClass="TrainingViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Z4I-35-fNb" customClass="UpBodyViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P0H-8h-mfB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="984"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BY0-Xc-amh">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BY0-Xc-amh">
                                 <rect key="frame" x="-20" y="44" width="415" height="940"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lOP-cA-J2x">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="training07" translatesAutoresizingMaskIntoConstraints="NO" id="lOP-cA-J2x">
                                         <rect key="frame" x="20" y="20" width="375" height="920"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5min" translatesAutoresizingMaskIntoConstraints="NO" id="0wS-2b-AeZ">
@@ -2108,6 +2124,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OY-ma-RcT">
                                         <rect key="frame" x="151" y="354" width="120" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="mBR-Re-Mby" kind="presentation" modalTransitionStyle="crossDissolve" id="Uxq-P6-yfi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2u4-k3-voi">
                                         <rect key="frame" x="52" y="224" width="90" height="90"/>
@@ -2152,8 +2171,8 @@
                                             <action selector="exitBTN:" destination="Z4I-35-fNb" eventType="touchUpInside" id="kbX-Dg-aA6"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="看電視一邊做" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zU-3e-Myh">
-                                        <rect key="frame" x="135" y="32" width="104" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="上半身訓練" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zU-3e-Myh">
+                                        <rect key="frame" x="144" y="32" width="87" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -2183,6 +2202,7 @@
                                 </state>
                                 <connections>
                                     <action selector="closeBTN:" destination="3mt-7H-L7D" eventType="touchUpInside" id="RJy-ZL-kxs"/>
+                                    <segue destination="BbL-li-1GF" kind="presentation" modalTransitionStyle="flipHorizontal" id="scg-on-wd0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2205,20 +2225,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEA-pW-aBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2070" y="-3335"/>
+            <point key="canvasLocation" x="2069.5999999999999" y="-3335.5322338830588"/>
         </scene>
-        <!--Training View Controller-->
+        <!--All Body View Controller-->
         <scene sceneID="hn4-jF-WZq">
             <objects>
-                <viewController id="q6L-aI-BR1" customClass="TrainingViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="q6L-aI-BR1" customClass="AllBodyViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yog-qX-CCx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="984"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mpZ-fk-b5l">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpZ-fk-b5l">
                                 <rect key="frame" x="-20" y="44" width="415" height="940"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lyh-sU-lar">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="training06" translatesAutoresizingMaskIntoConstraints="NO" id="Lyh-sU-lar">
                                         <rect key="frame" x="20" y="20" width="375" height="920"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5min" translatesAutoresizingMaskIntoConstraints="NO" id="0TX-5n-0Ra">
@@ -2236,6 +2256,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9UL-Yf-i3B">
                                         <rect key="frame" x="151" y="354" width="120" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="ICZ-qR-sNt" kind="presentation" modalTransitionStyle="crossDissolve" id="j0k-Pn-sbu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INB-NR-3tM">
                                         <rect key="frame" x="52" y="224" width="90" height="90"/>
@@ -2263,7 +2286,7 @@
                                     <constraint firstItem="Lyh-sU-lar" firstAttribute="top" secondItem="mpZ-fk-b5l" secondAttribute="top" constant="20" id="0EV-Dg-16B"/>
                                     <constraint firstAttribute="trailing" secondItem="Lyh-sU-lar" secondAttribute="trailing" constant="20" id="Ktb-ZI-lBE"/>
                                     <constraint firstItem="Lyh-sU-lar" firstAttribute="leading" secondItem="mpZ-fk-b5l" secondAttribute="leading" constant="20" id="QC0-68-S4Q"/>
-                                    <constraint firstAttribute="bottom" secondItem="Lyh-sU-lar" secondAttribute="bottom" constant="40" id="rSy-yq-IFk"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lyh-sU-lar" secondAttribute="bottom" constant="50" id="rSy-yq-IFk"/>
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ewx-Su-WwY">
@@ -2280,8 +2303,8 @@
                                             <action selector="exitBTN:" destination="q6L-aI-BR1" eventType="touchUpInside" id="4jv-7Q-Q9N"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="看電視一邊做" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijd-sP-ZVe">
-                                        <rect key="frame" x="135" y="32" width="104" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="全身訓練" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijd-sP-ZVe">
+                                        <rect key="frame" x="152" y="32" width="70" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -2311,6 +2334,7 @@
                                 </state>
                                 <connections>
                                     <action selector="closeBTN:" destination="3mt-7H-L7D" eventType="touchUpInside" id="TSH-3R-kbD"/>
+                                    <segue destination="aXw-T5-4Nw" kind="presentation" modalTransitionStyle="flipHorizontal" id="pLb-St-Jd7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2335,18 +2359,18 @@
             </objects>
             <point key="canvasLocation" x="2070" y="-4660"/>
         </scene>
-        <!--Training View Controller-->
+        <!--Waist Body View Controller-->
         <scene sceneID="0pp-FU-bzb">
             <objects>
-                <viewController id="9Hd-vh-rcb" customClass="TrainingViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9Hd-vh-rcb" customClass="WaistBodyViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mP3-FT-qAf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="984"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TcV-qZ-Hka">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TcV-qZ-Hka">
                                 <rect key="frame" x="-20" y="44" width="415" height="940"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fty-ZU-H1E">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="training05" translatesAutoresizingMaskIntoConstraints="NO" id="fty-ZU-H1E">
                                         <rect key="frame" x="20" y="20" width="375" height="920"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5min" translatesAutoresizingMaskIntoConstraints="NO" id="l1W-kN-pO3">
@@ -2364,6 +2388,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHn-RH-gQ6">
                                         <rect key="frame" x="151" y="354" width="120" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="n8w-8k-zDL" kind="presentation" modalTransitionStyle="crossDissolve" id="ZiK-Bf-0ee"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEp-1b-Vby">
                                         <rect key="frame" x="52" y="224" width="90" height="90"/>
@@ -2391,7 +2418,7 @@
                                     <constraint firstAttribute="trailing" secondItem="fty-ZU-H1E" secondAttribute="trailing" constant="20" id="DJM-9c-2tw"/>
                                     <constraint firstItem="fty-ZU-H1E" firstAttribute="top" secondItem="TcV-qZ-Hka" secondAttribute="top" constant="20" id="Q4o-yI-YeG"/>
                                     <constraint firstItem="fty-ZU-H1E" firstAttribute="leading" secondItem="TcV-qZ-Hka" secondAttribute="leading" constant="20" id="knH-CH-uob"/>
-                                    <constraint firstAttribute="bottom" secondItem="fty-ZU-H1E" secondAttribute="bottom" constant="40" id="zjN-Ld-ALN"/>
+                                    <constraint firstAttribute="bottom" secondItem="fty-ZU-H1E" secondAttribute="bottom" constant="50" id="zjN-Ld-ALN"/>
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="otj-Zm-dPR">
@@ -2408,8 +2435,8 @@
                                             <action selector="exitBTN:" destination="9Hd-vh-rcb" eventType="touchUpInside" id="Mk9-0h-dxZ"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="看電視一邊做" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6e-b5-Vbp">
-                                        <rect key="frame" x="135" y="32" width="104" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="預防腰痛" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6e-b5-Vbp">
+                                        <rect key="frame" x="152" y="32" width="70" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -2439,6 +2466,7 @@
                                 </state>
                                 <connections>
                                     <action selector="closeBTN:" destination="3mt-7H-L7D" eventType="touchUpInside" id="h3j-P6-sgI"/>
+                                    <segue destination="lgt-OF-3ou" kind="presentation" modalTransitionStyle="flipHorizontal" id="9Bd-c2-FPz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2463,18 +2491,18 @@
             </objects>
             <point key="canvasLocation" x="3740" y="-3336"/>
         </scene>
-        <!--Training View Controller-->
+        <!--Down Body View Controller-->
         <scene sceneID="Y82-8r-EbA">
             <objects>
-                <viewController id="co3-lG-X9h" customClass="TrainingViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="co3-lG-X9h" customClass="DownBodyViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DMq-gp-PVx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="984"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T4Y-K4-asW">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4Y-K4-asW">
                                 <rect key="frame" x="-20" y="44" width="415" height="940"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FF5-dn-lwe">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="training08" translatesAutoresizingMaskIntoConstraints="NO" id="FF5-dn-lwe">
                                         <rect key="frame" x="20" y="20" width="375" height="920"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5min" translatesAutoresizingMaskIntoConstraints="NO" id="ikZ-tq-McH">
@@ -2492,6 +2520,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ceu-xV-eUB">
                                         <rect key="frame" x="151" y="354" width="120" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="mWN-D0-88y" kind="presentation" modalTransitionStyle="crossDissolve" id="71a-ku-99g"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaD-cj-vhW">
                                         <rect key="frame" x="52" y="224" width="90" height="90"/>
@@ -2518,7 +2549,7 @@
                                 <constraints>
                                     <constraint firstItem="FF5-dn-lwe" firstAttribute="leading" secondItem="T4Y-K4-asW" secondAttribute="leading" constant="20" id="6Fw-UP-N6K"/>
                                     <constraint firstAttribute="trailing" secondItem="FF5-dn-lwe" secondAttribute="trailing" constant="20" id="A2e-pO-RFX"/>
-                                    <constraint firstAttribute="bottom" secondItem="FF5-dn-lwe" secondAttribute="bottom" constant="40" id="PGQ-pG-htJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="FF5-dn-lwe" secondAttribute="bottom" constant="50" id="PGQ-pG-htJ"/>
                                     <constraint firstItem="FF5-dn-lwe" firstAttribute="top" secondItem="T4Y-K4-asW" secondAttribute="top" constant="20" id="Vbe-SY-A6U"/>
                                 </constraints>
                             </scrollView>
@@ -2536,8 +2567,8 @@
                                             <action selector="exitBTN:" destination="co3-lG-X9h" eventType="touchUpInside" id="ftZ-MW-Jqe"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="看電視一邊做" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw5-2U-tQT">
-                                        <rect key="frame" x="135" y="32" width="104" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="下半身訓練" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw5-2U-tQT">
+                                        <rect key="frame" x="144" y="32" width="87" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -2567,6 +2598,7 @@
                                 </state>
                                 <connections>
                                     <action selector="closeBTN:" destination="3mt-7H-L7D" eventType="touchUpInside" id="VV0-DU-g1r"/>
+                                    <segue destination="AeG-X8-uwj" kind="presentation" modalTransitionStyle="flipHorizontal" id="ApJ-WX-Z6e"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2591,10 +2623,10 @@
             </objects>
             <point key="canvasLocation" x="3740" y="-4661"/>
         </scene>
-        <!--WatchTV Practice View Controller-->
+        <!--Up Body Practice View Controller-->
         <scene sceneID="zlv-li-StT">
             <objects>
-                <viewController id="mBR-Re-Mby" customClass="WatchTVPracticeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mBR-Re-Mby" customClass="UpBodyPracticeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="asd-Qv-6Ls">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2696,10 +2728,10 @@
             </objects>
             <point key="canvasLocation" x="2777" y="-3012"/>
         </scene>
-        <!--WatchTV Practice View Controller-->
+        <!--Waist Body Practice View Controller-->
         <scene sceneID="g1h-N1-xeO">
             <objects>
-                <viewController id="n8w-8k-zDL" customClass="WatchTVPracticeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="n8w-8k-zDL" customClass="WaistBodyPracticeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RYG-C1-o9j">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2801,10 +2833,10 @@
             </objects>
             <point key="canvasLocation" x="4425" y="-3012"/>
         </scene>
-        <!--WatchTV Practice View Controller-->
+        <!--Down Body Practice View Controller-->
         <scene sceneID="VXZ-Vb-izH">
             <objects>
-                <viewController id="mWN-D0-88y" customClass="WatchTVPracticeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mWN-D0-88y" customClass="DownBodyPracticeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DK1-Ho-mnN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2906,10 +2938,10 @@
             </objects>
             <point key="canvasLocation" x="4425" y="-4518"/>
         </scene>
-        <!--WatchTV Practice View Controller-->
+        <!--All Body Practice View Controller-->
         <scene sceneID="GlV-jt-oWy">
             <objects>
-                <viewController id="ICZ-qR-sNt" customClass="WatchTVPracticeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ICZ-qR-sNt" customClass="AllBodyPracticeViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hoQ-Ps-COc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3011,10 +3043,10 @@
             </objects>
             <point key="canvasLocation" x="2777" y="-4519"/>
         </scene>
-        <!--WatchTV Pause View Controller-->
+        <!--Waist Pause View Controller-->
         <scene sceneID="dwq-yx-cqI">
             <objects>
-                <viewController id="lgt-OF-3ou" customClass="WatchTVPauseViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lgt-OF-3ou" customClass="WaistPauseViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hY0-Gt-JhW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3043,7 +3075,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="開始運動前倒數" translatesAutoresizingMaskIntoConstraints="NO" id="Sq7-wf-vIN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="彎腰0.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sq7-wf-vIN">
                                 <rect key="frame" x="0.0" y="64" width="375" height="530"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -3086,6 +3118,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="opS-xw-p1I">
+                                <rect key="frame" x="0.0" y="69" width="375" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIO-4B-kTE">
                                 <rect key="frame" x="-20" y="64" width="415" height="553"/>
                                 <subviews>
@@ -3100,11 +3137,6 @@
                                     <constraint firstItem="3ow-ns-Hvd" firstAttribute="leading" secondItem="zIO-4B-kTE" secondAttribute="leading" constant="20" id="odi-mT-9MT"/>
                                 </constraints>
                             </scrollView>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="opS-xw-p1I">
-                                <rect key="frame" x="0.0" y="69" width="375" height="548"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="chB-9F-dVN">
                                 <rect key="frame" x="0.0" y="64" width="375" height="5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3167,10 +3199,10 @@
             </objects>
             <point key="canvasLocation" x="4425" y="-3658"/>
         </scene>
-        <!--WatchTV Pause View Controller-->
+        <!--Up Body Pause View Controller-->
         <scene sceneID="Y4Q-KB-Nb6">
             <objects>
-                <viewController id="BbL-li-1GF" customClass="WatchTVPauseViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BbL-li-1GF" customClass="UpBodyPauseViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BKn-9p-XWI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3199,7 +3231,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="開始運動前倒數" translatesAutoresizingMaskIntoConstraints="NO" id="DfF-Qu-cJb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="上身0" translatesAutoresizingMaskIntoConstraints="NO" id="DfF-Qu-cJb">
                                 <rect key="frame" x="0.0" y="64" width="375" height="530"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -3242,6 +3274,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LSm-dn-rXZ">
+                                <rect key="frame" x="0.0" y="69" width="375" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mMO-93-A9U">
                                 <rect key="frame" x="-20" y="64" width="415" height="553"/>
                                 <subviews>
@@ -3256,11 +3293,6 @@
                                     <constraint firstAttribute="bottom" secondItem="4L1-ov-qgd" secondAttribute="bottom" id="wLf-Zs-RJg"/>
                                 </constraints>
                             </scrollView>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LSm-dn-rXZ">
-                                <rect key="frame" x="0.0" y="69" width="375" height="548"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vpt-nY-SXn">
                                 <rect key="frame" x="0.0" y="64" width="375" height="5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3323,10 +3355,10 @@
             </objects>
             <point key="canvasLocation" x="2777" y="-3658"/>
         </scene>
-        <!--WatchTV Pause View Controller-->
+        <!--All Body Pause View Controller-->
         <scene sceneID="OGx-jI-co4">
             <objects>
-                <viewController id="aXw-T5-4Nw" customClass="WatchTVPauseViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aXw-T5-4Nw" customClass="AllBodyPauseViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9pI-gO-agB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3355,7 +3387,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="開始運動前倒數" translatesAutoresizingMaskIntoConstraints="NO" id="3wf-oZ-6dp">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="全身0.png" translatesAutoresizingMaskIntoConstraints="NO" id="3wf-oZ-6dp">
                                 <rect key="frame" x="0.0" y="64" width="375" height="530"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -3398,6 +3430,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xd8-I6-x22">
+                                <rect key="frame" x="0.0" y="69" width="375" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dsh-Ue-r8j">
                                 <rect key="frame" x="-20" y="64" width="415" height="553"/>
                                 <subviews>
@@ -3412,11 +3449,6 @@
                                     <constraint firstItem="kyU-iw-Zez" firstAttribute="leading" secondItem="Dsh-Ue-r8j" secondAttribute="leading" constant="20" id="cd5-Ra-C6G"/>
                                 </constraints>
                             </scrollView>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xd8-I6-x22">
-                                <rect key="frame" x="0.0" y="69" width="375" height="548"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TEB-sH-OdC">
                                 <rect key="frame" x="0.0" y="64" width="375" height="5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3479,10 +3511,10 @@
             </objects>
             <point key="canvasLocation" x="2777" y="-5198"/>
         </scene>
-        <!--WatchTV Pause View Controller-->
+        <!--Down Body Pause View Controller-->
         <scene sceneID="97B-4r-qZ0">
             <objects>
-                <viewController id="AeG-X8-uwj" customClass="WatchTVPauseViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AeG-X8-uwj" customClass="DownBodyPauseViewController" customModule="ForJo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cuH-eI-agW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3511,7 +3543,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="開始運動前倒數" translatesAutoresizingMaskIntoConstraints="NO" id="4xP-nb-5mo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="下身0.png" translatesAutoresizingMaskIntoConstraints="NO" id="4xP-nb-5mo">
                                 <rect key="frame" x="0.0" y="64" width="375" height="530"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -3554,6 +3586,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lh8-Mr-2C0">
+                                <rect key="frame" x="0.0" y="69" width="375" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wBf-I2-aR2">
                                 <rect key="frame" x="-20" y="64" width="415" height="553"/>
                                 <subviews>
@@ -3568,11 +3605,6 @@
                                     <constraint firstAttribute="bottom" secondItem="ZZY-gi-2W2" secondAttribute="bottom" id="pCd-rH-1IS"/>
                                 </constraints>
                             </scrollView>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lh8-Mr-2C0">
-                                <rect key="frame" x="0.0" y="69" width="375" height="548"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4hy-tn-Gh1">
                                 <rect key="frame" x="0.0" y="64" width="375" height="5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -17046,13 +17078,22 @@ AgAMPgoADD4NAAw+HwAMPiIADD4nAAAAAAAABAEAAAAAAAAAWQAAAAAAAAAAAAAAAAAMPik
         <image name="training02" width="375" height="865"/>
         <image name="training03" width="375" height="865"/>
         <image name="training04.png" width="375" height="865"/>
+        <image name="training05" width="375" height="920"/>
+        <image name="training06" width="375" height="920"/>
+        <image name="training07" width="375" height="920"/>
+        <image name="training08" width="375" height="920"/>
+        <image name="上身0" width="375" height="530"/>
+        <image name="下身0.png" width="750" height="1060"/>
         <image name="久坐1-1" width="375" height="530"/>
+        <image name="全身0.png" width="750" height="1060"/>
+        <image name="彎腰0.png" width="750" height="1060"/>
         <image name="開始運動前倒數" width="375" height="530"/>
         <image name="電視暫停1-1" width="375" height="934"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jFM-re-90v"/>
+        <segue reference="A1T-ac-kWU"/>
+        <segue reference="bHI-Nn-Obv"/>
         <segue reference="hoh-p6-zMN"/>
-        <segue reference="9DQ-Jw-BaM"/>
+        <segue reference="aHR-Jp-vTY"/>
     </inferredMetricsTieBreakers>
 </document>

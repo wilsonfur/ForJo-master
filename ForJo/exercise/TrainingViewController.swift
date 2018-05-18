@@ -22,21 +22,21 @@ class TrainingViewController: UIViewController {
         MIN5UI.isHidden = false
         MIN10UI.isHidden = true
         MIN15UI.isHidden = true
-        doneButton.backgroundColor = UIColor(red: 255/255, green: 147/255, blue: 0/255, alpha: 1/1)
+        doneButton.backgroundColor = UIColor(red: 247/255, green: 122/255, blue: 37/255, alpha: 1/1)
         doneButton.isUserInteractionEnabled = true
     }
     @IBAction func countTrainingButton10(_ sender: UIButton) {
         MIN10UI.isHidden = false
         MIN5UI.isHidden = true
         MIN15UI.isHidden = true
-        doneButton.backgroundColor = UIColor(red: 255/255, green: 147/255, blue: 0/255, alpha: 1/1)
+        doneButton.backgroundColor = UIColor(red: 247/255, green: 122/255, blue: 37/255, alpha: 1/1)
         doneButton.isUserInteractionEnabled = true
     }
     @IBAction func countTrainingButton15(_ sender: UIButton) {
         MIN15UI.isHidden = false
         MIN10UI.isHidden = true
         MIN5UI.isHidden = true
-        doneButton.backgroundColor = UIColor(red: 255/255, green: 147/255, blue: 0/255, alpha: 1/1)
+        doneButton.backgroundColor = UIColor(red: 247/255, green: 122/255, blue: 37/255, alpha: 1/1)
         doneButton.isUserInteractionEnabled = true
     }
 

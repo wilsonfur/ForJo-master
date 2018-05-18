@@ -93,7 +93,7 @@ class LongSitPauseViewController: UIViewController {
             prepareLabel.text = "準備"
             timeCount -= 1
             playSound(soundName:"BEE")
-            configurePlayer(videoName: "久站伸展")
+            configurePlayer(videoName: "伸展準備_02久坐")
             videoPlayer?.play()
             countLabel.alpha = 0.1
             countMovie.isHidden=false
@@ -108,7 +108,7 @@ class LongSitPauseViewController: UIViewController {
             prepareLabel.text = "維持動作"
             countLabel.alpha = 1
             countMovie.isHidden=true
-            configurePlayer(videoName: "久站伸展")
+            configurePlayer(videoName: "伸展準備_02久坐")
             videoPlayer?.play()
             imgArr = [UIImage(named:"久坐2-1.png")!,UIImage(named:"久坐2-2.png")!]
             playRepeatAni(Duration: 2, RepeatCount: 0)
@@ -116,7 +116,7 @@ class LongSitPauseViewController: UIViewController {
             timeCount -= 1
         //倒數5秒
         case 41:
-            configurePlayer(videoName: "久站伸展")
+            configurePlayer(videoName: "伸展準備_02久坐展")
             videoPlayer?.play()
             prepareLabel.text = "準備"
             playSound(soundName:"BEE")
@@ -177,7 +177,7 @@ class LongSitPauseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configurePlayer(videoName: "久站伸展")
+        configurePlayer(videoName: "伸展準備_02久坐")
         exitBTNUI.isHidden = true
         startTimer()
         countLabel.text = "00:15"
