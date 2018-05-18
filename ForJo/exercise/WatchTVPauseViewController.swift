@@ -11,6 +11,7 @@ import AVKit
 
 class WatchTVPauseViewController: UIViewController {
     
+    @IBOutlet weak var pauseWhiteBG: UIView!
     @IBOutlet weak var countLabelOrange: UILabel!
     @IBOutlet weak var prepareLabel: UILabel!
     @IBOutlet weak var slideShow: UIImageView!
@@ -325,7 +326,7 @@ class WatchTVPauseViewController: UIViewController {
     
     
     var imgArr = [UIImage(named:"久坐1-1.png")!,UIImage(named:"久坐1-2.png")!]
-    var imgArrPause = [UIImage(named:"久坐暫停1-1.png")!,UIImage(named:"久坐暫停1-2.png")!]
+    var imgArrPause = [UIImage(named:"電視暫停1-1.png")!,UIImage(named:"電視暫停1-2.png")!]
 
     
     @IBAction func exitBTN(_ sender: Any) {
@@ -342,12 +343,14 @@ class WatchTVPauseViewController: UIViewController {
             bottomBTNUI.setTitle("繼續運動", for: .normal)
             playRepeatAniPause()
             slideShowPause.isHidden = false
+            pauseWhiteBG.isHidden = false
         } else {
             startTimer()
             exitBTNUI.isHidden = true
             bottomBTNUI.setTitle("暫停運動", for: .normal)
             imgArr = [UIImage(named:"久坐暫停1-1.png")!,UIImage(named:"久坐暫停1-2.png")!]
             slideShowPause.isHidden = true
+            pauseWhiteBG.isHidden = true
         }
         
     }
